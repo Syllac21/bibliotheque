@@ -28,6 +28,7 @@ if(
 $nom=trim(strip_tags($postData['nom']));
 $prenom=trim(strip_tags($postData['prenom']));
 $email=trim(strip_tags($postData['email']));
+
 $password=password_hash(trim(strip_tags($postData['password'])), PASSWORD_DEFAULT);
 
 // requête SQL

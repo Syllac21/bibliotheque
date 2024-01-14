@@ -12,7 +12,7 @@
         <!-- label et input --> 
         <div class="mb-3">
             <label for="email" class="form-label"> Email </label>
-            <input type="email" name="form-control" id="email" aria-describedby="email-help" placeholder="nom@exemple.fr">
+            <input type="email" name="email" class="form-control" id="email" aria-describedby="email-help" placeholder="nom@exemple.fr">
             <div id="email-help" class="form-text">Email utilisé comme identifiant lors de la création du compte</div>
         </div>
         <div class="mb-3">
