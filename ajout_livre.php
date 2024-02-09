@@ -12,7 +12,7 @@
     <div class="container">
         <?php require_once(__DIR__.'/header.php'); ?>
         <h1>Nouveau livre</h1>
-        <form action="submit_ajout_livre.php" method="POST">
+        <form action="submit_ajout_livre.php" method="POST" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="genre" class="form-label">Genre du livre</label>
                 <input type="text" name="genre" class="form-text" id="genre">
@@ -28,6 +28,14 @@
             <div class="mb-3">
                 <label for="description" class="form-label">Résumé du livre</label>
                 <textarea name="description" class="form-control" id="description" placeholder="votre résumé"></textarea>
+            </div>
+
+            <!-- upload de l'image -->
+            
+            <div class="mb-3">
+                    <input type="hidden" name="max_file_size" value="5000000">
+                    <label for="image" class="form-label">image</label>
+                    <input type="file" name="image" class="form-text" id="image">
             </div>
             <button type="submit" class="btn btn-primary">Envoyer</button>
             

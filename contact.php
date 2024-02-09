@@ -3,8 +3,8 @@ session_start();
 // inclusion des fichiers utiles
 
 require_once(__DIR__.'/config/mysql.php');
-require_once(__DIR__.'/variables.php');
 require_once(__DIR__.'/databaseconnect.php');
+require_once(__DIR__.'/variables.php');
 require_once(__DIR__.'/functions.php');
 ?>
 
@@ -20,8 +20,6 @@ require_once(__DIR__.'/functions.php');
 <body class="d-flex flex-column min-vh-100">
     <?php require_once(__DIR__.'/header.php');?>
     <h1>Contactez-nous</h1>
-
-
     <?php require_once(__DIR__.'/footer.php');?>
 </body>
 </html>

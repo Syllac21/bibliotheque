@@ -52,6 +52,7 @@ foreach($detailsBook as $comment){
         ];
     }
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -76,12 +77,16 @@ foreach($detailsBook as $comment){
                 <?php echo($book['description']);?>
             </article>
             <article class="col">
-                <?php echo($book['image']);?>
+                <img src="./<?php echo($book['image']);?>" alt="image du livre">
             </article>
             <aside class="row">
                 <p><i>Possédé par <?php echo($comment['proprio']);?> </i></p>
             </aside>
         </div>
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item"><a class="bouton-editer" href="book_update.php?id=<?php echo($book['ID_livre']); ?>">Editer l'article</a></li>
+            <li class="list-group-item"><a class="bouton-supprimer" href="book_delete.php?id=<?php echo($book['ID_livre']); ?>">Supprimer l'article</a></li>
+        </ul>
 
 
         <!-- affichage des commentaires -->
